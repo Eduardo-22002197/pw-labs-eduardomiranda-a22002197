@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+ 
+<html lang = "pt">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Report Page </title>
+        <meta name = "description" content = "Report Page PW-LAB1">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    </head>
+
+    <body>
+        <header> 
+            <h1> Report Eduardo Miranda, a22002197 </h1>
+            <hr><br>
+        </header>
+
+        <main>
+            <h2> &nbsp; 2 - Conhecer a Internet </h2>
+            <h3> &nbsp; Endereços IP </h3>
+            <h4> &nbsp; EX.1 </h4>
+            <p> 
+                &nbsp; Após utilizar o website <a href = "https://whatismyipaddress.com/"> What's My IP Address</a>, descobri que o IP do meu computador é 
+                82.154.247.147 e o do telemóvel 89.17.103.87, ambos localizados na zona de Almada/Lisboa, como podemos ver nas fotografias abaixo: 
+            </p>
+            <br>
+
+            <span>
+                &nbsp; <img src = "img/myiplocation.png" alt = "Computer IP Location" width = "750">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src = "img/phoneiplocation.png" alt = "Phone IP Location" width = "330">
+            </span> 
+            <br><br><br>
+
+            <h4> &nbsp; EX.2 </h4>
+            <p> 
+                &nbsp; Utilizando a mesma ferramenta do exercício anterior, descobri o IP do website, que é 3.216.185.98 e a sua localização, no Kansas, Estados 
+                Unidos da América, como podemos verificar pela fotografia abaixo:
+            </p>
+            &nbsp; <img src = "img/websiteiplocation.png" alt = "Website IP Location" width = "750">
+            <br><br><br><br>
+
+            <h3> &nbsp; Percurso </h3>
+            <h4> &nbsp; EX.1 </h4>
+            <p> &nbsp; Utilizando a "maneira clássica" de verificar o percurso dos pacotes transmitidos, obtive o seguinte resultado: </p>
+            &nbsp; <img src = "img/classicwayroute.png" alt = "Classic Traceip" width = "750">
+            <br><br><br>
+
+            <h4> &nbsp; EX.2 </h4>
+            <p> &nbsp; Utilizando a ferramenta <a href=""> Geo Traceroute </a> para mostrar a rota dos pacotes graficamente, obtive o seguinte resultado: </p>
+            &nbsp; <img src = "img/geotracerouteheroku.png" alt = "Geo Traceroute Heroku App" width = "750">
+            <br>
+            <p> &nbsp; Podemos concluir assim, que o percurso dos pacotes do website começa no Prior Velho, depois passa por Lisboa, até chegar a Frankfurt. </p>
+            <br><br><br><br>
+
+            <h2> &nbsp; 3 - Acesso via HTTP à minha página Web </h2>
+            <h3> &nbsp; HTTP </h3>
+            <h4> &nbsp; EX.1 </h4>
+            <p> 
+                &nbsp; Ao selecionar a opção "ver código fonte", verifico que o código fonte apresentado é todo o código escrito e colocado no repositório do Gitub,
+                como podemos ver pela imagem abaixo:
+            </p>
+            &nbsp; <img src = "img/pagesource.png" alt = "Page Source" width = "850">
+            <br><br><br>
+
+            <h3> &nbsp; Inspect </h3>
+            <h4> &nbsp; EX.1 </h4>
+            <p>
+                Ao clickar nas browser developer tools e selecionar a barra inspect, verifico que aparecem dois ficheios, correspondentes à soure code da página
+                e à imagem lá inserida, com os respectivos tempos de transferência de ambos, como podemos ver pela seguinte imagem: 
+            </p>
+            <img src = "img/browserinspect.png" alt = "Browser Inspect" width = "850">
+            <br><br>
+
+            <p> 
+                &nbsp; Podemos então concluir que foram transferidos 2 ficheiros, um do tipo document (o HTML) e outro do tipo txt (a imagem). Timings de espera e de
+                descarga:
+            </p>
+            <li> Espera HTML - 67.9ms </li>
+            <li> Descarga HTML - 0.4ms </li>
+            <li> Espera Imagem - 0.0ms </li>
+            <li> Descarga Imagem - 0.0ms </li>
+            <br>
+
+            <p> 
+                &nbsp; Ao selecionar cada ficheiro, quando vejo a sua preview, vejo o conteudo de cada um, isto é, ao selecionar a preview do HTML vejo o "código" do
+                html e ao selecionar a preview da imagem, vejo a imagem em si; quando vejo o header, vejo toda a informação relacionada com o website, como o IP, o
+                status, o URL, com o pedido do cliente (neste caso, eu), como a versão do protocolo HTTP e o browser que estou a usar e o host. Também vejo a 
+                informação relacionada com o a resposta do servidor, como a data em que foi dada, a versão do protocolo HTTP e o tipo de servidor; quando vejo o 
+                timing, é me fornecida uma informação detalhada de todo o tempo que foi necessário para fazer a transferência do webiste e no que é que o tempo
+                foi investido.
+            </p>
+        </main>
+    </body>
+</html>
