@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang = "pt">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name = "author" content = "Eduardo Miranda">
+        <meta name = "keywords" content = "Berlin, Berlim, City, Cidade, Capital, Alemanha, Germany">
+        <meta name = "description" content = "Website sobre Berlim">
+        <link rel = "shortcut icon" type = "image/x-icon" href = "images/favicon-96x96.png"/>
+        <title> PW Lab 2 </title>
+    </head>
+    
+    <body style = "background-color: #C9C9C9;">
+        <header>
+            <h1> Berlim </h1>
+            <img src = "images/berlin-contrast.jpg" alt = "Image Of Berlin Then And After" width = "300">
+            <br><br>
+
+            <nav>
+                <a href="../index.html"> Home</a> |
+                <a href="index.html"> Introdução</a> | 
+                <a href="local.html"> Localização</a> |
+                <a href="multimedia.html"> Multimédia</a> | 
+                <a href="info.html"> Informações</a> | 
+                <a href="quizz.html"> Quizz</a> | 
+                <a href="comentarios.html"><b> Comentários</b></a>
+            </nav>
+            <br>
+        </header>
+
+        <main>
+            <h3> Comentários </h3>
+                <form autocomplete = "off" method = "POST" action = "mailto:eduffmiranda@gmail.com">
+                    <fieldset>
+                        <legend> Identificação </legend>
+                        <label for = "first_name"> Primeiro Nome: </label>
+                        <input type = "text" id = "first_name" name = "first_name" placeholder = "Primeiro Nome..."><br>
+    
+                        <label for = "last_name"> Último Nome: </label>
+                        <input type = "text" id = "last_name" name = "last_name" placeholder = "Último Nome..."><br><br>
+                        
+    
+                        <label for = "date_birth"> Data Nascimento: </label>
+                        <input type = "date" id = "date_birth" name = "date_birth"><br><br>
+    
+                        <label for = "email"> Email: </label>
+                        <input type = "text" id = "email" name = "email" placeholder = "Email..."><br><br>
+                    </fieldset>
+                    <br><br>
+
+                    <fieldset>
+                        <legend> Feedback </legend>
+                        <label for = "ques1"> O site era claro e transmitia a informação corretamente? </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "ques1">
+                        <label for = "ques1_1"> 1 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Africa">
+                        <label for = "ques1_2"> 2 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Europe">
+                        <label for = "ques1_3"> 3 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "America">
+                        <label for = "ques1_4"> 4 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Oceania">
+                        <label for = "ques1_5"> 5 </label><br><br>
+
+                        <label for = "ques2"> A informação partilhada era clara e útil? </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "ques1">
+                        <label for = "ques2_1"> 1 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Africa">
+                        <label for = "ques2_2"> 2 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Europe">
+                        <label for = "ques2_3"> 3 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "America">
+                        <label for = "ques2_4"> 4 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Oceania">
+                        <label for = "ques2_5"> 5 </label><br><br>
+
+                        <label for = "ques3"> Como classifica a abrangência da informação partilhada? </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "ques1">
+                        <label for = "ques3_1"> 1 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Africa">
+                        <label for = "ques3_2"> 2 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Europe">
+                        <label for = "ques3_3"> 3 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "America">
+                        <label for = "ques3_4"> 4 </label>
+                        <input type = "radio" id = "ques1" name = "ques1" value = "Oceania">
+                        <label for = "ques3_5"> 5 </label><br><br>
+
+                        <label for = "website_class1"> Como classifica o website </label>
+                        <input type = "range" id = "website_class1" name = "website_class1" min = "0" max = "5" value = "0" oninput = "yearR1.value = parseInt(website_class1.value)">
+                        <output name = "yearR1" for = "website_class1"> 0 </output><br><br>
+
+                        <label for = "website_class2"> Como classifica o design e a criatividade </label>
+                        <input type = "range" id = "website_class2" name = "website_class2" min = "0" max = "5" value = "0" oninput = "yearR2.value = parseInt(website_class2.value)">
+                        <output name = "yearR2" for = "website_class2"> 0 </output><br><br>
+
+                        <label for = "error"> Foram detetados erros? </label>
+                        <select name = "error" id = "error">
+                            <option value = "yes"> Yes </option>
+                            <option value = "no"> No </option>
+                        </select>
+                        <br><br>
+
+                        <label for = "comment"> Comentários adicionais: </label><br>
+                        <textarea id = "comment" name = "comment" rows = "8" cols = "40"></textarea></p>
+                    </fieldset>
+                    <br><br>
+
+                    <input type = "image" src = "images/submit_wall.png" alt = "Submit Image" width = "68"><br>
+                    <input type = "submit" value = "Submit">
+                </form>
+        </main>
+    </body>
+</html>
