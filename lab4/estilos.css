@@ -33,6 +33,13 @@ h3 {
     align-items: center;
 }
 
+.align-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .text-revealer {
     position: relative;
     display: inline-block;
