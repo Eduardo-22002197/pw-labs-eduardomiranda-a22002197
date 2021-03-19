@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 13,5px;
+    animation: fade 1.2s 1 ease-in-out;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-revealer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.text-revealer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(35%);
+    height: 60%;
+    z-index: 1;
+    background-color: white;
+}
+
+#revealer1::before {
+    animation: showText 1s ease;
+}
+
+#st1 {
+    margin-bottom: 7px;
+    opacity: 0;
+    animation: fade 4.5s forwards;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 13px 17px 13px 17px;
+    border-radius: 7px;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    animation: fillButton 1s ease forwards;
+}
+
+.location-map {
+    border-radius: 20px;
+    filter: grayscale(100%) invert(100%) contrast(100%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-table {
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 100px;
+    width: 80%;
+}
+
+.big-table th, td {
+    padding: 0px;
+}
+
+.big-table th {
+    text-align: center;
+    background-color: rgb(80, 193, 154);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.big-table td {
+    background-color: rgb(80, 235, 180);
+    text-align: center;
+    color: rgb(99, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.big-table tr {
+    opacity: 0.8;
+}
+
+.big-table tr:hover {
+    opacity: 1;
+}
+
+.big-table td img {
+    width: 20px;
+    filter: invert(100%);
+}
+
+/*****+**** Animations *****+****/
+@keyframes fade {                                   
+    to { opacity: 1; }
+}
+
+@keyframes fillButton {                             
+    from { background-color: transparent; }
+    to { background-color: rgb(80, 193, 154); }
+}
+
+@keyframes showText { 
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 210px;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 210px;
+    }
+}

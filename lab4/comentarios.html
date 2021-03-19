@@ -9,29 +9,37 @@
         <meta name = "keywords" content = "Berlin, Berlim, City, Cidade, Capital, Alemanha, Germany">
         <meta name = "description" content = "Website sobre Berlim">
         <link rel = "shortcut icon" type = "image/x-icon" href = "images/favicon-96x96.png"/>
-        <title> PW Lab 3 </title>
+        <link rel = "stylesheet" href = "estilos.css">
+        <title> PW Lab 4 </title>
     </head>
     
-    <body style = "background-color: #C9C9C9;">
+    <body>
         <header>
-            <h1> Berlim </h1>
+            <div class = "text-revealer" id = "revealer1">
+                <div class = "main-h" id = "st1"> 
+                    <h1> Berlim </h1>
+                </div>
+            </div>
+
             <img src = "images/berlin-contrast.jpg" alt = "Image Of Berlin Then And After" width = "300">
             <br><br>
 
             <nav>
-                <a href="../index.html"> Home</a> |
-                <a href="index.html"> Introdução</a> | 
-                <a href="local.html"> Localização</a> |
-                <a href="multimedia.html"> Multimédia</a> | 
-                <a href="info.html"> Informações</a> | 
-                <a href="quizz.html"> Quizz</a> | 
-                <a href="comentarios.html"><b> Comentários</b></a>
+                <a href="../index.html"> Home </a> 
+                <a href="index.html"> Introdução </a>  
+                <a href="local.html"> Localização </a> 
+                <a href="multimedia.html"> Multimédia </a> 
+                <a href="info.html"> Informações </a>  
+                <a href="quizz.html"> Quizz </a>  
+                <a href="comentarios.html"> Comentários </a> 
+                <a href = "html5-css.html"> HTML5-CSS </a>
             </nav>
             <br>
         </header>
 
         <main>
             <h3> Comentários </h3>
+            <section>
                 <form autocomplete = "off" method = "POST" action = "mailto:eduffmiranda@gmail.com">
                     <fieldset>
                         <legend> Identificação </legend>
@@ -111,6 +119,11 @@
                     <input type = "image" src = "images/submit_wall.png" alt = "Submit Image" width = "68"><br>
                     <input type = "submit" value = "Submit">
                 </form>
+            </section>
         </main>
+
+        <footer>
+            <p> Eduardo Miranda &copy | 22002197 | Universidade Lusófona | 2021 </p>
+        </footer>
     </body>
 </html>

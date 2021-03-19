@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang = "pt">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name = "author" content = "Eduardo Miranda">
+        <meta name = "keywords" content = "Berlin, Berlim, City, Cidade, Capital, Alemanha, Germany">
+        <meta name = "description" content = "Website sobre Berlim">
+        <link rel = "shortcut icon" type = "image/x-icon" href = "images/favicon-96x96.png"/>
+        <link rel = "stylesheet" href = "estilos.css">
+        <title> PW Lab 4 </title>
+    </head>
+    
+    <body>
+        <header>
+            <div class = "text-revealer" id = "revealer1">
+                <div class = "main-h" id = "st1"> 
+                    <h1> Berlim </h1>
+                </div>
+            </div>
+
+            <img src = "images/berlin-contrast.jpg" alt = "Image Of Berlin Then And After" width = "300">
+            <br><br>
+
+            <nav>
+                <a href="../index.html"> Home </a> 
+                <a href="index.html"> Introdução </a>  
+                <a href="local.html"> Localização </a> 
+                <a href="multimedia.html"> Multimédia </a> 
+                <a href="info.html"> Informações </a>  
+                <a href="quizz.html"> Quizz </a>  
+                <a href="comentarios.html"> Comentários </a> 
+                <a href = "html5-css.html"> HTML5-CSS </a>
+            </nav>
+            <br>
+        </header>
+
+        <main>
+            <section>
+                <h3> Quizz </h3>
+
+                <form autocomplete = "off" method = "POST" action = "mailto:eduffmiranda@gmail.com">
+                    <fieldset>
+                        <legend> Identificação </legend>
+                        <label for = "first_name"> Primeiro Nome: </label>
+                        <input type = "text" id = "first_name" name = "first_name" placeholder = "Primeiro Nome..."><br>
+
+                        <label for = "last_name"> Último Nome: </label>
+                        <input type = "text" id = "last_name" name = "last_name" placeholder = "Último Nome..."><br><br>
+                        
+
+                        <label for = "date_birth"> Data Nascimento: </label>
+                        <input type = "date" id = "date_birth" name = "date_birth"><br><br>
+
+                        <label for = "email"> Email: </label>
+                        <input type = "text" id = "email" name = "email" placeholder = "Email..."><br><br>
+                    </fieldset>
+                    <br><br>
+
+                    <fieldset>
+                        <legend> Quizz </legend>
+                        <label for = "colors"> Quais as cores que constituem a bandeira Alemã? </label><br>
+                        <input type = "color" id = "colors" name = "color_1">
+                        <input type = "color" id = "colors" name = "color_2">
+                        <input type = "color" id = "colors" name = "color_3"><br><br>
+
+                        <label for = "continent"> Berlim pertence a que continente? </label><br>
+                        <input type = "radio" id = "continent" name = "continent" value = "Asia">
+                        <label for = "continent_1"> Ásia </label><br>
+
+                        <input type = "radio" id = "continent" name = "continent" value = "Africa">
+                        <label for = "continent_2"> África </label><br>
+
+                        <input type = "radio" id = "continent" name = "continent" value = "Europe">
+                        <label for = "continent_3"> Europa </label><br>
+
+                        <input type = "radio" id = "continent" name = "continent" value = "America">
+                        <label for = "continent_4"> América </label><br>
+
+                        <input type = "radio" id = "continent" name = "continent" value = "Oceania">
+                        <label for = "continent_5"> Oceania </label><br><br>
+
+                        <label for = "reconstruction_year"> Em que ano foi feita a "reconstrução da Porta de Brandemburgo?:" </label>
+                        <input type = "range" id = "reconstruction_year" name = "reconstruction_year" min = "1939" max = "2021" value = "0" oninput = "yearR.value = parseInt(reconstruction_year.value)">
+                        <output name = "yearR" for = "reconstruction_year"> 0 </output><br><br>
+
+                        <label for = "goalsBerlin"> Principais objetivos de uma visita a Berlim: </label><br>
+                        <input type = "checkbox" id = "goalsBerlin" name = "goalsBerlin" value = "Architecture">
+                        <label for = "continent_4"> Apreciar a sua arquitetura </label><br>
+
+                        <input type = "checkbox" id = "goalsBerlin" name = "goalsBerlin" value = "Beer">
+                        <label for = "continent_4"> Exprimentar cerveja local </label><br>
+
+                        <input type = "checkbox" id = "goalsBerlin" name = "goalsBerlin" value = "History">
+                        <label for = "continent_4"> Conhecer a sua história </label><br>
+
+                        <input type = "checkbox" id = "goalsBerlin" name = "goalsBerlin" value = "Night">
+                        <label for = "continent_4"> Diversão na sua vida noturna </label><br>
+
+                        <input type = "checkbox" id = "goalsBerlin" name = "goalsBerlin" value = "Tech">
+                        <label for = "continent_4"> Conhecer melhor os contributos tecnológicos </label><br><br>
+
+                        <label for = "age"> Idade de Berlim: </label>
+                        <input type = "number" id = "age" name = "age" min = "400" max = "1200" step = "4"><br><br>
+
+                        <label for = "year_fall"> O Muro de Berlim caiu em:  </label>
+                        <input list = "year_fall" name = "year_fall">
+                        <datalist id = "year_fall">
+                            <option value = "1984"></option>
+                            <option value = "1688"></option>
+                            <option value = "1689"></option>
+                            <option value = "1985"></option>
+                        </datalist><br><br>
+
+                        <label for = "checkpoint"> O checkpoint mais famoso do Muro de Berlim: </label>
+                        <select name = "checkpoint" id = "checkpoint">
+                            <option value = "Alfa"> Alfa </option>
+                            <option value = "Bravo"> Bravo </option>
+                            <option value = "Charlie"> Charlie </option>
+                        </select>
+                    </fieldset><br>
+
+                    <input type = "image" src = "images/submit_wall.png" alt = "Submit Image" width = "68"><br>
+                    <input type = "submit" value = "Submit">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p> Eduardo Miranda &copy | 22002197 | Universidade Lusófona | 2021 </p>
+        </footer>
+    </body>
+</html>
